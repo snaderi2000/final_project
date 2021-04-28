@@ -32,7 +32,7 @@ update_lexicon!(c)
 mtx = collect(transpose(dtm(c)))
 """
 make a subset but choosing the first 5000 columns for training 
-and the last 500 for testing, assume that the data is randomized
+and the last 571 for testing, assume that the data is randomized
 """
 
 train_mtx = mtx[:,1:5000]
@@ -51,7 +51,7 @@ tru_val = [dt[1][i] for i in 5001:5571] #what they should actually be
 
 accuracy = sum(pred .== tru_val) / 571 
 
-println("the accuracy is" * string(accuracy)) 
+println("the accuracy is " * string(accuracy)) 
 
 
 
