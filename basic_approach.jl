@@ -1,5 +1,5 @@
 using CSV
-using TextAnalysis: NaiveBayesClassifier, fit!, predict
+using TextAnalysis
 using Statistics
 using MultivariateStats
 using Distributions
